@@ -58,7 +58,7 @@ def get_books(request, search_query):
     querystring = {"s": search_query}
 
     headers = {
-        "X-RapidAPI-Key": "6fe88db82dmsh7ef124648db3c6dp1399e5jsn8bc2bf5ef176",
+        "X-RapidAPI-Key": "Oops, no public key :D",
         "X-RapidAPI-Host": "getbooksinfo.p.rapidapi.com"
     }
 
