@@ -16,8 +16,8 @@ PY PROJECT FILES:
 - Views: Available api functions
 
 Examples for easy query:
-- Add book query: {"user_id":"get id from db","book":"Lotr", "author":"Tolkien","year":"1965"}
-- Book review query: {"book_id":"get id from db","review":"Greatest Book!"}
+- Add book query(127.0.0.1:8000/add-book): {"user_id":"get id from db","book":"Lotr", "author":"Tolkien","year":"1965"}
+- Book review query(127.0.0.1:8000/review_book): {"book_id":"get id from db","review":"Greatest Book!"}
 
 Unfinished functionality(**path("search-book/<search_query>"), get_book** function):
 - Populate only necessary fields on json query
