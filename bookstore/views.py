@@ -1,6 +1,7 @@
 import pydash
 import requests
 from django.http import HttpResponse, JsonResponse, HttpResponseBadRequest, HttpResponseServerError
+from django.shortcuts import render
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -38,8 +39,8 @@ def list_all_books(request):
     return Response(status=200, data=data)
 
 
-def home(request):
-    return HttpResponse("My bookstore")
+#def home(request):
+#    return HttpResponse("My bookstore")
 
 
 @api_view(['POST'])
@@ -100,3 +101,7 @@ def get_books(request, search_query):
         return JsonResponse(data)
     else:
         return HttpResponseServerError("Unable to fetch book data.")"""
+
+
+def home(request):
+    return render(request, "home.html")

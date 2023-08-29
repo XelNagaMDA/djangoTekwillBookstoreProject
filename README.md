@@ -22,3 +22,6 @@ Examples for easy query:
 Unfinished functionality(**path("search-book/<search_query>"), get_book** function):
 - Populate only necessary fields on json query
 - Select a book from a returned api call, and add it
+
+Bonus:
+HTML homepage template with a link to the book list
