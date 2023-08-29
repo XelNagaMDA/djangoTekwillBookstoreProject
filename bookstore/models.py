@@ -23,3 +23,12 @@ class Book(models.Model):
     title = models.CharField(max_length=200)
     author = models.CharField(max_length=64)
     year = models.IntegerField(default=1)
+
+
+class Review(models.Model):
+    id = models.UUIDField(primary_key=True, null=False, default=uuid4)
+    book = models.ForeignKey(Book, on_delete=models.DO_NOTHING)
+    text = models.TextField(max_length=2000)
+
+
+
